@@ -9,7 +9,10 @@ android_app {
     // Include SettingsLib and it's dependencies
     defaults: ["SettingsLibDefaults"],
 
-    srcs: ["src/**/*.java"],
+    srcs: [
+        "src/**/*.java",
+        "src/**/*.kt",
+    ],
     resource_dirs: ["res"],
 
     manifest: "AndroidManifest.xml",
@@ -27,10 +30,15 @@ android_app {
 
     static_libs: [
         "androidx.appcompat_appcompat",
+        "androidx.core_core-ktx",
         "androidx.dynamicanimation_dynamicanimation",
         "androidx.palette_palette",
+        "androidx.preference_preference",
         "androidx.recyclerview_recyclerview",
         "jsr305",
+        "kotlinx-coroutines-android",
+        "kotlinx-coroutines-core",
+        "kotlin-stdlib",
         "org.lineageos.platform.internal",
         "SettingsLibPreference",
         "SystemUISharedLib",
