@@ -105,4 +105,9 @@
           android:title="@string/spoofing_title"
           android:fragment="org.lineageos.lineageparts.spoofing.Spoofing"
           lineage:xmlRes="@xml/spoofing" />
+
+    <part android:key="miscellaneous"
+          android:title="@string/miscellaneous_title"
+          android:fragment="org.lineageos.lineageparts.hardware.Miscellaneous"
+          lineage:xmlRes="@xml/miscellaneous" />
 </parts-catalog>

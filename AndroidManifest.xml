@@ -416,5 +416,37 @@
                 android:value="primary_profile_only" />
         </activity-alias>
 
+        <!-- Miscellaneous settings (System category) -->
+        <activity-alias
+            android:name=".hardware.Miscellaneous"
+            android:exported="true"
+            android:label="@string/miscellaneous_title"
+            android:targetActivity="PartsActivity">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="org.lineageos.lineageparts.MISCELLANEOUS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.system" />
+            <meta-data
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_settings_miscellaneous" />
+            <meta-data
+                android:name="com.android.settings.icon_tintable"
+                android:value="true" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="-252" />
+            <meta-data
+                android:name="com.android.settings.profile"
+                android:value="primary_profile_only" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/summary_empty" />
+        </activity-alias>
+
     </application>
 </manifest>
