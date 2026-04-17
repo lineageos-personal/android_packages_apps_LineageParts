@@ -43,5 +43,6 @@ android_app {
         "SettingsLibPreference",
         "SystemUISharedLib",
         "LineagePreferenceLib",
+        "custom-preference",
     ],
 }
