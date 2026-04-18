@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2024-2025 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:lineage="http://schemas.android.com/apk/res-auto"
+    android:title="@string/three_fingers_swipe_title">
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="three_fingers_swipe_illustration"
+        app:lottie_rawRes="@raw/lottie_three_fingers_swipe"
+        android:selectable="false" />
+
+    <ListPreference
+        android:key="three_fingers_swipe_action"
+        android:title="@string/three_fingers_swipe_choose_action"
+        android:summary="%s"
+        android:entries="@array/gesture_actions_entries"
+        android:entryValues="@array/gesture_actions_values"
+        android:defaultValue="0" />
+
+</PreferenceScreen>
