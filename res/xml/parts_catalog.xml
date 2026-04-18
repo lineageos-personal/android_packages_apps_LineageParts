@@ -91,6 +91,12 @@
           android:fragment="org.lineageos.lineageparts.gestures.TouchscreenGestureSettings"
           lineage:xmlRes="@xml/touchscreen_gesture_settings" />
 
+    <part android:key="gesture_settings"
+          android:title="@string/three_fingers_swipe_title"
+          android:summary="@string/three_fingers_swipe_summary"
+          android:fragment="org.lineageos.lineageparts.gestures.GestureSettings"
+          lineage:xmlRes="@xml/gesture_settings" />
+
     <part android:key="trust_interface"
           android:title="@string/trust_title"
           android:fragment="org.lineageos.lineageparts.trust.TrustPreferences"

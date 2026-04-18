@@ -798,5 +798,10 @@
     <string name="miscellaneous_title">Miscellaneous</string>
     <string name="window_ignore_secure_title">Ignore Window Secure</string>
     <string name="window_ignore_secure_summary">Allow taking screenshots and screen recordings in all apps</string>
+
+    <!-- Three fingers swipe -->
+    <string name="three_fingers_swipe_title">Three fingers swipe</string>
+    <string name="three_fingers_swipe_summary">Swipe screen with three fingers to perform action</string>
+    <string name="three_fingers_swipe_choose_action">Choose action</string>
 </resources>
 

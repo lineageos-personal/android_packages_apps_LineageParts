@@ -272,6 +272,32 @@
                 android:resource="@string/touchscreen_gesture_settings_summary" />
         </activity-alias>
 
+        <!-- Three fingers swipe settings (Gestures category) -->
+        <activity-alias
+            android:name=".gestures.GestureSettings"
+            android:exported="true"
+            android:label="@string/three_fingers_swipe_title"
+            android:targetActivity="PartsActivity">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="org.lineageos.lineageparts.GESTURE_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.gestures" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="-255" />
+            <meta-data
+                android:name="com.android.settings.profile"
+                android:value="primary_profile_only" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/three_fingers_swipe_summary" />
+        </activity-alias>
+
         <!-- Trust interface (Privacy category) -->
         <activity-alias
             android:name=".trust.TrustPreferences"

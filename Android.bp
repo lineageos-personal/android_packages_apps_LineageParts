@@ -44,5 +44,6 @@ android_app {
         "SystemUISharedLib",
         "LineagePreferenceLib",
         "custom-preference",
+        "lottie",
     ],
 }
