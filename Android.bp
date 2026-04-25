@@ -30,6 +30,12 @@ android_app {
 
     static_libs: [
         "androidx.appcompat_appcompat",
+        "androidx.compose.animation_animation",
+        "androidx.compose.foundation_foundation",
+        "androidx.compose.material_material-icons-extended",
+        "androidx.compose.material3_material3",
+        "androidx.compose.runtime_runtime",
+        "androidx.compose.ui_ui",
         "androidx.core_core-ktx",
         "androidx.dynamicanimation_dynamicanimation",
         "androidx.palette_palette",
@@ -41,6 +47,7 @@ android_app {
         "kotlin-stdlib",
         "org.lineageos.platform.internal",
         "SettingsLibPreference",
+        "SpaLib",
         "SystemUISharedLib",
         "LineagePreferenceLib",
         "custom-preference",
