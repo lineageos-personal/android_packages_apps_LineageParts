@@ -28,6 +28,12 @@
             <intent android:action="com.android.settings.action.STATUS_BAR_TUNER" />
         </Preference>
 
+        <Preference
+            android:key="dynamic_bar"
+            android:title="@string/dynamic_bar_title"
+            android:summary="@string/dynamic_bar_summary"
+            android:fragment="org.lineageos.lineageparts.statusbar.DynamicBar" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
