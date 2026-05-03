@@ -35,20 +35,6 @@
         android:dependency="ax_dynamic_bar_enabled">
 
         <SwitchPreferenceCompat
-            android:key="event_screen_recording"
-            android:icon="@drawable/ic_screenrecord"
-            android:title="@string/dynamic_bar_event_screen_recording"
-            android:summary="@string/dynamic_bar_event_screen_recording_summary"
-            android:defaultValue="true" />
-
-        <SwitchPreferenceCompat
-            android:key="event_privacy"
-            android:icon="@drawable/ic_privacy"
-            android:title="@string/dynamic_bar_event_privacy"
-            android:summary="@string/dynamic_bar_event_privacy_summary"
-            android:defaultValue="true" />
-
-        <SwitchPreferenceCompat
             android:key="event_audio_recording"
             android:icon="@drawable/ic_mic"
             android:title="@string/dynamic_bar_event_audio_recording"
@@ -152,13 +138,6 @@
             android:icon="@drawable/ic_flashlight_on"
             android:title="@string/dynamic_bar_event_torch"
             android:summary="@string/dynamic_bar_event_torch_summary"
-            android:defaultValue="true" />
-
-        <SwitchPreferenceCompat
-            android:key="event_casting"
-            android:icon="@drawable/ic_cast"
-            android:title="@string/dynamic_bar_event_casting"
-            android:summary="@string/dynamic_bar_event_casting_summary"
             android:defaultValue="true" />
 
         <SwitchPreferenceCompat
