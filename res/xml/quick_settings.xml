@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:key="quick_settings_settings"
+    android:title="@string/quick_settings_title">
+
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        android:key="media_waveform_seekbar"
+        android:title="@string/media_waveform_seekbar_title"
+        android:summary="@string/media_waveform_seekbar_summary"
+        android:defaultValue="false" />
+
+</PreferenceScreen>

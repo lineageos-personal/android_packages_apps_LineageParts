@@ -450,7 +450,7 @@
     <!-- Status bar -->
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
-    <string name="status_bar_quick_qs_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
+    <string name="status_bar_quick_qs_pulldown_summary">%1$s edge of the status bar pulls down Quick settings</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">Left</string>
     <string name="status_bar_quick_qs_pulldown_summary_right">Right</string>
     <string name="status_bar_quick_qs_pulldown_off">Off</string>
@@ -501,7 +501,7 @@
     <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">Brightness</string>
     <string name="status_bar_brightness_slider_title">Brightness slider</string>
-    <string name="status_bar_brightness_slider_summary">Adjust brightness from the Quick Settings</string>
+    <string name="status_bar_brightness_slider_summary">Adjust brightness from the Quick settings</string>
     <string name="status_bar_brightness_slider_auto_title">Auto brightness</string>
     <string name="status_bar_brightness_slider_auto_summary">Show toggle for adaptive brightness near the slider</string>
     <string name="status_bar_brightness_slider_show_never">Never show</string>
@@ -536,6 +536,9 @@
     <string name="network_traffic_show_units_compact">Compact</string>
     <string name="network_traffic_show_units_summary">Whether to show traffic measurement units in the statusbar</string>
     <string name="network_traffic_disabled_clock">Network traffic disabled due to clock position</string>
+
+    <!-- Quick settings -->
+    <string name="quick_settings_title">Quick settings</string>
 
     <!-- Protected apps -->
     <string name="protected_apps_manager_title">Protected apps</string>
@@ -803,5 +806,14 @@
     <string name="three_fingers_swipe_title">Three fingers swipe</string>
     <string name="three_fingers_swipe_summary">Swipe screen with three fingers to perform action</string>
     <string name="three_fingers_swipe_choose_action">Choose action</string>
+
+    <!-- Waveform media seekbar -->
+    <string name="media_waveform_seekbar_title">Waveform media seekbar</string>
+    <string name="media_waveform_seekbar_summary">Enable animated waveform effect for media playback progress</string>
+
+    <!-- SystemUI Restart -->
+    <string name="systemui_restart_title">SystemUI restart required</string>
+    <string name="systemui_restart_message">A SystemUI restart is required for the changes to take effect. Restart now?</string>
+    <string name="systemui_restart_process">Restarting SystemUI\u2026</string>
 </resources>
 
