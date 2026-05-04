@@ -448,7 +448,7 @@
     <!-- Status bar -->
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
-    <string name="status_bar_quick_qs_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
+    <string name="status_bar_quick_qs_pulldown_summary">%1$s edge of the status bar pulls down Quick settings</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">Left</string>
     <string name="status_bar_quick_qs_pulldown_summary_right">Right</string>
     <string name="status_bar_quick_qs_pulldown_off">Off</string>
@@ -499,7 +499,7 @@
     <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">Brightness</string>
     <string name="status_bar_brightness_slider_title">Brightness slider</string>
-    <string name="status_bar_brightness_slider_summary">Adjust brightness from the Quick Settings</string>
+    <string name="status_bar_brightness_slider_summary">Adjust brightness from the Quick settings</string>
     <string name="status_bar_brightness_slider_auto_title">Auto brightness</string>
     <string name="status_bar_brightness_slider_auto_summary">Show toggle for adaptive brightness near the slider</string>
     <string name="status_bar_brightness_slider_show_never">Never show</string>
@@ -534,6 +534,9 @@
     <string name="network_traffic_show_units_compact">Compact</string>
     <string name="network_traffic_show_units_summary">Whether to show traffic measurement units in the statusbar</string>
     <string name="network_traffic_disabled_clock">Network traffic disabled due to clock position</string>
+
+    <!-- Quick settings -->
+    <string name="quick_settings_title">Quick settings</string>
 
     <!-- Protected apps -->
     <string name="protected_apps_manager_title">Protected apps</string>
@@ -854,5 +857,14 @@
     <string name="dynamic_bar_event_biometric_unlock_summary">Show chip on fingerprint or face unlock</string>
     <string name="dynamic_bar_about_title">About Dynamic Bar</string>
     <string name="dynamic_bar_about_summary">Dynamic Bar transforms your status bar into an interactive hub. Status chips appear and animate based on system events, giving you at-a-glance information without interrupting your workflow.\n\nEach event type has its own accent color and expanded card with quick actions.</string>
+
+    <!-- Waveform media seekbar -->
+    <string name="media_waveform_seekbar_title">Waveform media seekbar</string>
+    <string name="media_waveform_seekbar_summary">Enable animated waveform effect for media playback progress</string>
+
+    <!-- SystemUI Restart -->
+    <string name="systemui_restart_title">SystemUI restart required</string>
+    <string name="systemui_restart_message">A SystemUI restart is required for the changes to take effect. Restart now?</string>
+    <string name="systemui_restart_process">Restarting SystemUI\u2026</string>
 </resources>
 
