@@ -866,5 +866,9 @@
     <string name="systemui_restart_title">SystemUI restart required</string>
     <string name="systemui_restart_message">A SystemUI restart is required for the changes to take effect. Restart now?</string>
     <string name="systemui_restart_process">Restarting SystemUI\u2026</string>
+
+    <!-- Application downgrade -->
+    <string name="app_downgrade_title">Allow app downgrade</string>
+    <string name="app_downgrade_summary">This allows you to downgrade applications. Note that this may lead to crashes and data corruption</string>
 </resources>
 
