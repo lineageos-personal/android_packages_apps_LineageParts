@@ -819,5 +819,9 @@
     <!-- Application downgrade -->
     <string name="app_downgrade_title">Allow app downgrade</string>
     <string name="app_downgrade_summary">This allows you to downgrade applications. Note that this may lead to crashes and data corruption</string>
+
+    <!-- Charging info -->
+    <string name="lockscreen_charging_info_title">Charging info</string>
+    <string name="lockscreen_charging_info_summary">Show charging current and voltage on lockscreen</string>
 </resources>
 
