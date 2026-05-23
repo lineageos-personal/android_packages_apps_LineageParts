@@ -19,10 +19,4 @@
         android:summary="@string/app_downgrade_summary"
         android:defaultValue="false"/>
 
-    <com.android.settings.custom.preference.SystemSettingSwitchPreference
-        android:key="lockscreen_charging_info"
-        android:title="@string/lockscreen_charging_info_title"
-        android:summary="@string/lockscreen_charging_info_summary"
-        android:defaultValue="true" />
-
 </PreferenceScreen>
