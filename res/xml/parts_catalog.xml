@@ -65,7 +65,7 @@
           lineage:xmlRes="@xml/status_bar_settings" />
 
     <part android:key="quick_settings"
-          android:title="@string/quick_settings_title"
+          android:title="@string/user_interface_title"
           android:fragment="org.lineageos.lineageparts.statusbar.QuickSettings"
           lineage:xmlRes="@xml/quick_settings" />
 

@@ -537,8 +537,8 @@
     <string name="network_traffic_show_units_summary">Whether to show traffic measurement units in the statusbar</string>
     <string name="network_traffic_disabled_clock">Network traffic disabled due to clock position</string>
 
-    <!-- Quick settings -->
-    <string name="quick_settings_title">Quick settings</string>
+    <!-- User interface -->
+    <string name="user_interface_title">User interface</string>
 
     <!-- Protected apps -->
     <string name="protected_apps_manager_title">Protected apps</string>
@@ -832,4 +832,3 @@
     <string name="app_downgrade_title">Allow app downgrade</string>
     <string name="app_downgrade_summary">This allows you to downgrade applications. Note that this may lead to crashes and data corruption</string>
 </resources>
-

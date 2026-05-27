@@ -246,11 +246,11 @@
                 android:resource="@string/summary_empty" />
         </activity-alias>
 
-        <!-- Quick settings settings (System category) -->
+        <!-- User interface settings (System category) -->
         <activity-alias
             android:name=".statusbar.QuickSettings"
             android:exported="true"
-            android:label="@string/quick_settings_title"
+            android:label="@string/user_interface_title"
             android:targetActivity="PartsActivity">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -263,7 +263,7 @@
                 android:value="com.android.settings.category.ia.system" />
             <meta-data
                 android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_sysbar_quicksettings" />
+                android:resource="@drawable/ic_settings_user_interface" />
             <meta-data
                 android:name="com.android.settings.icon_tintable"
                 android:value="true" />
