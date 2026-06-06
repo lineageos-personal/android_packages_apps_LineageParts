@@ -19,4 +19,11 @@
         android:summary="@string/app_downgrade_summary"
         android:defaultValue="false"/>
 
+    <!-- Block PairIP license activity -->
+    <com.android.settings.custom.preference.SystemPropertySwitchPreference
+        android:key="persist.sys.pairip.activity.block"
+        android:title="@string/miscellaneous_pairip_activity_block_title"
+        android:summary="@string/miscellaneous_pairip_activity_block_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>

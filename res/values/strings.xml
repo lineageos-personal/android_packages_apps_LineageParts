@@ -831,4 +831,8 @@
     <!-- Application downgrade -->
     <string name="app_downgrade_title">Allow app downgrade</string>
     <string name="app_downgrade_summary">This allows you to downgrade applications. Note that this may lead to crashes and data corruption</string>
+
+    <!-- Block PairIP license activity -->
+    <string name="miscellaneous_pairip_activity_block_title">Block PairIP license verification</string>
+    <string name="miscellaneous_pairip_activity_block_summary">Prevent Play Store apps from launching the \"Get this app from Play\" screen when not installed by the Play Store</string>
 </resources>
