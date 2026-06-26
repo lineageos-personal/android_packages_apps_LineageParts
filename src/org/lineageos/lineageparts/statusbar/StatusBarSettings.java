@@ -103,24 +103,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment {
         enableQuickSettingsBrightnessSliderDependents(qsShowBrightnessSlider.getIntValue(1));
 
         mQuickPulldown = findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
-        mQuickPulldown.setSummaryProvider(preference -> {
-            int value = Integer.parseInt(
-                    ((LineageSystemSettingListPreference) preference).getValue());
-            Resources res = preference.getContext().getResources();
-
-            switch (value) {
-                case PULLDOWN_DIR_NONE:
-                    return res.getString(R.string.status_bar_quick_qs_pulldown_off);
-                case PULLDOWN_DIR_LEFT:
-                case PULLDOWN_DIR_RIGHT:
-                    int side = (value == PULLDOWN_DIR_LEFT) ^ isRtlMode(res)
-                            ? R.string.status_bar_quick_qs_pulldown_summary_left
-                            : R.string.status_bar_quick_qs_pulldown_summary_right;
-
-                    return res.getString(R.string.status_bar_quick_qs_pulldown_summary,
-                            res.getString(side));
-            }
-            return "";
+        mQuickPulldown.setOnPreferenceChangeListener((preference, newValue) -> {
+            String value = (String) newValue;
+            mQuickPulldown.setValue(value);
+            updateQuickPulldownSummary(value);
+            return false;
         });
     }
 
@@ -172,6 +159,36 @@ public class StatusBarSettings extends SettingsPreferenceFragment {
                 mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values);
             }
             mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries);
+        }
+        updateQuickPulldownSummary(mQuickPulldown.getValue());
+    }
+
+    private void updateQuickPulldownSummary(String stringValue) {
+        final Resources res = getResources();
+        final int value;
+        try {
+            value = Integer.parseInt(stringValue);
+        } catch (NumberFormatException e) {
+            mQuickPulldown.setSummary("");
+            return;
+        }
+
+        switch (value) {
+            case PULLDOWN_DIR_NONE:
+                mQuickPulldown.setSummary(R.string.status_bar_quick_qs_pulldown_off);
+                break;
+            case PULLDOWN_DIR_LEFT:
+            case PULLDOWN_DIR_RIGHT:
+                int side = (value == PULLDOWN_DIR_LEFT) ^ isRtlMode(res)
+                        ? R.string.status_bar_quick_qs_pulldown_summary_left
+                        : R.string.status_bar_quick_qs_pulldown_summary_right;
+
+                mQuickPulldown.setSummary(res.getString(R.string.status_bar_quick_qs_pulldown_summary,
+                        res.getString(side)));
+                break;
+            default:
+                mQuickPulldown.setSummary("");
+                break;
         }
     }
 
